@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>AeroMotion - portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styl6.css">
+<link rel="shortcut icon" href="logo1.ico" type="image/x-icon">
+</head>
+<header>
+<div class="menu">
+    <ul>
+        <li><a href="index.html#onas">O nas</a></li>
+        <li><a href="galeria.html">Portfolio</a></li>
+        <li><a href="index.html#cennik">Cennik</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="https://www.instagram.com/aeromotion.szczecin/" target="_blank"><img src="ig.png" id="ig"></a></li>
+        <li><a href="https://www.facebook.com/AeroMotionSzczecin" target="_blank"><img src="fb.png" id="fb"></a></li>
+    </ul>
+</div>
+<br><br><br><br>
+</header>
+<body>
+<div class="slider">
+    <script type="text/javascript">
+        window.onload = zmiana;
+        var nr = 0;
+        function zmiana() {
+        var obrazy = ["slider1.webp", "slider2.webp", "slider3.webp", "slider4.webp"];
+        nr++;
+        if (nr == obrazy.length) {
+        nr = 0;
+        }
+        document.getElementById('baner').src = obrazy[nr];
+        setTimeout(zmiana, 6000);
+        }
+</script>
+<h2>Portfolio</h2>
+<img src="slider1.webp" alt="baner" id="baner">
+</div>
+<div class="galeria">
+    <img src="portfolio1.webp"><img src="portfolio2.webp"><img src="portfolio3.webp"><br>
+    <img src="portfolio4.webp"><video controls autoplay><source src="portfolio5.mp4" type="video/mp4"></video><img src="portfolio6.webp"><br>
+    <img src="portfolio7.webp"><img src="portfolio8.webp"><img src="portfolio9.webp"><br>
+    <h2>Nieruchomości</h2>
+    <img src="domy1.webp"><img src="domy2.webp"><img src="domy3.webp"><br>
+    <img src="domy4.webp"><img src="domy5.webp"><img src="domy6.webp"><br>
+    <h2>Panoramy 360°</h2>
+
+</div>
+</body>
+<footer>
+    AeroMotion - fotografia i filmowanie dronem Szczecin i Zachodniopomorskie<br>
+    Wiktor - 508342614<br>
+    Rafał - 732068436<br>
+    <a href="mailto:kontakt@aeromotion.pl">kontakt@aeromotion.pl</a><br>
+    NIP - 8513294560
+</footer>
+</html>

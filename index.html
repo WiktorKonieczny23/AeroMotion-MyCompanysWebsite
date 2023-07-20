@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>AeroMotion - zdjęcia i filmy dronem Szczecin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AeroMotion Szczecin - fotografia i filmowanie dronem Zachodniopomorskie" />
+<meta name="keywords" content="dron, DJI, zdjęcia dronem, filmy dronem, nagrywanie dronem, Szczecin, zdjęcia, filmy, fotografowanie, nagrywanie, dronowanie, latanie, Zachodniopomorskie, Dobra, Police, Wołczkowo, Bezrzecze, Mierzyn, Dołuje, Pilchowo, Tanowo">
+<meta name="google-site-verification" content="VdcoAJa42CRcbfb8ow1S1TA9KToPNXFqpUibdmK2iAo" />
+<link rel="stylesheet" href="styl6.css">
+<link rel="shortcut icon" href="logo1.ico" type="image/x-icon">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("html").on("submit","#contact_form",function(e){
+    e.preventDefault();
+    $("#send_form_status").html('').hide();
+    var data=$("#contact_form").serialize();
+    $.post("/send_form.php",data,function(res){
+      $("#send_form_status").html(res.msg).show();
+      if(res.status==1){ 
+        $("#contact_form")[0].reset();
+      } 
+    });
+  });
+});
+</script>
+</head>
+<header>
+<div class="menu">
+    <ul>
+        <li><a href="#onas">O nas</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="#cennik">Cennik</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="https://www.instagram.com/aeromotion.szczecin/" target="_blank"><img src="ig.png" id="ig"></a></li>
+        <li><a href="https://www.facebook.com/AeroMotionSzczecin" target="_blank"><img src="fb.png" id="fb"></a></li>
+    </ul>
+</div>
+<br><br><br>
+    <img src="logo1.png" id="foto1">
+    <hr id="thread4">
+</header>
+<body>
+<div class="onasdiv">
+<a id="onas"></a>
+<br><br><br><br>
+<h1>Profesjonalna fotografia i nagrania z powietrza</h1>
+Latanie dronem to nasza praca i pasja. Dobry kadr z powietrza potrafi ukazać wszystko z zupełnie innej, ciekawszej perspektywy. Ujęcia z drona to świetny sposób na uchwycenie nieruchomości na sprzedaż, eventu sportowego, wyczynów sportowym autem lub zrobienie pamiątkowej sesji zdjęciowej. Oferujemy usługę obejmującą wynajem drona, certyfikowanego pilota i postprodukcję zdjęć i filmów. Działamy w Szczecinie i na terenie całego województwa Zachodniopomorskiego.
+<br><br>
+</div>
+<div class="guziory2137">
+<div class="guziory">
+    <button onclick="location.href='#kontakt'" class="button" id="button1"><span>Formularz kontaktowy</span></button>
+    <button onclick="location.href='galeria.html'" class="button" id="button2"><span>Portfolio</span></button>
+</div>
+</div>
+<br>
+<div class="kwadraty">
+    <div class="kwadrat" id="kwadrat1">
+        <img src="kamera.png" id="kamera"><br>
+        <h4>Wysoka jakość</h4>
+        Nagrywamy i fotografujemy w 4K, dajemy z siebie wszystko przy każdej realizacji!
+    </div>
+    <div class="kwadrat" id="kwadrat2">
+        <img src="zegar.png" id="zegar"><br>
+        <h4>Szybki czas realizacji</h4>
+        Oferujemy bardzo szybki czas realizacji zamówień i sprawny kontakt.
+    </div>
+    <div class="kwadrat" id="kwadrat3">
+        <img src="elastycznosc.png" id="elastycznosc"><br>
+        <h4>Elastyczność</h4>
+        Bez problemu dopasujemy się do twoich wymagań.
+    </div>
+</div>
+<div class="mavicspecs">
+<img src="mavic.png" id="mavic" alt="dron">
+Do dyspozycji posiadamy dwie sztuki profesjonalnego drona DJI Mavic 2 PRO<br>
+• 5 akumulatorów umożliwiająch łącznie 100 minut lotu<br>
+• zdjęcia i filmy w 4K<br>
+• optyka Hasselblad z 1" matrycą 20MPX<br>
+• możliwość wykonania panoramy 360°
+</div>
+<div class="cennik">
+<table id="tabela">
+    <tr><th>Pojedynczy wylot</th><th>Dwa wyloty</th><th>Trzy wyloty</th></tr>
+    <tr><td rowspan="2" class="cena"><span>200</span><sub>PLN</sub></td><td rowspan="2" class="cena"><span>340</span><sub>PLN</sub></td><td rowspan="2" class="cena"><span>570</span><sub>PLN</sub></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td class="cennikcontent">minimum 20 zdjęć lub 15 minut video</td><td class="cennikcontent">minimum 40 zdjęć lub 30 minut video</td><td class="cennikcontent">minimum 60 zdjęć lub 45 minut video</td></tr>
+    <tr><td class="cennikcontent">do 20 minut lotu</td><td class="cennikcontent">do 40 minut lotu</td><td class="cennikcontent">do 60 minut lotu</td></tr>
+    <tr><td class="cennikcontent">Obróbka video od 60PLN</td><td class="cennikcontent">Obróbka video od 100PLN</td><td class="cennikcontent">obróbka video od 150PLN</td></tr>
+    <tr><td colspan="3" class="cennikcontent">obróbka pojedynczego zdjęcia od 20PLN</td></tr>
+    <tr><td colspan="3" class="cennikcontent">Dojazd w promieniu 15km od Szczecińskiego Warszewa gratis. Każdy kolejny kilometr 1zł</td></tr>
+    <tr><td colspan="3" class="kontaktcennik">Ceny większych realizacji ustalane indywidualnie</td></tr>
+</table>
+<a id="cennik"></a>
+<br>
+</div>
+<div class="kontakt">
+    <div class="kontaktlewy">
+<br>
+SKONTAKTUJ SIĘ<br>
+<span id="znami">Z NAMI</span><br>
+<div id="send_form_status"></div>
+    </div>
+    <div class="kontaktprawy">
+<form method="post" action="send_form.php" id="contact_form">
+     <div class="input"><input type="text" name="name" id="name" class="formField" placeholder="Imię i nazwisko"/></div>
+     <div class="input"><input type="text" name="phone" id="phone" class="formField" placeholder="Numer telefonu"/></div>
+     <div class="input"><input type="text" name="email" id="email" class="formField" placeholder="Adres email"/></div>
+     <div class="input"><textarea name="message" id="message" class="formField" placeholder="Treść wiadomości"></textarea></div>
+     <div class="input"><button id="sendBtn" class="button"><span><b>Wyślij</b></span></button></div>
+</form>
+<a id="kontakt"></a>
+</div>
+</div>
+</body>
+<footer>
+AeroMotion - fotografia i filmowanie dronem Szczecin i Zachodniopomorskie<br>
+Wiktor - 508342614<br>
+Rafał - 732068436<br>
+<a href="mailto:kontakt@aeromotion.pl">kontakt@aeromotion.pl</a><br>
+NIP - 8513294560
+</footer>
+</html>
